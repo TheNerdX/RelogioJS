@@ -1,3 +1,3 @@
 # RelogioJS
-using js
-by TheNerd
+# using javascript
+# by TheNerd
