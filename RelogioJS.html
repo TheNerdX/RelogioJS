@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+<head>
+	<title>time</title>
+	<meta charset="utf-8">
+	<style>
+		#rel{
+            text-align:center;
+            color:#FF0000;
+            font-weight:bold;
+            font-size:30px;
+            width:130px;
+            background-color:#000;           
+		}
+
+    </style>
+	<script>
+		
+		 function Relogio() {
+		 	const data=new Date();
+		 	const hor=data.getHours();
+		 	const min=data.getMinutes();
+		 	const seg=data.getSeconds();
+
+            const horas=hor+":"+min+":"+seg;
+            document.getElementById("rel").value=horas;
+		 }
+
+         const tempo=setInterval(Relogio,1000);
+
+	</script>
+</head>
+<body bgcolor="black">
+
+   <center><input type="text" id="rel"/></h1></center>
+
+</body>
+</html>
